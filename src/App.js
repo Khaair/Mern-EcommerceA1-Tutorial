@@ -7,6 +7,9 @@ import Home from './Components/User/Home';
 import About from './Components/User/About';
 import Contact from './Components/User/Contact';
 import Admin from './Components/Admin/Admin';
+import AddtoCart from './Components/User/AddtoCart';
+import Wishlist from './Components/User/Wishlist';
+import Profile from './Components/User/Profile';
 
 
 
@@ -21,6 +24,12 @@ function App() {
       <Route path='/' element = {<Home/>}/>
       <Route path='/about' element = {<About/>}/>
       <Route path='/contact' element = {<Contact/>}/>
+      <Route path='/addtocart' element = {<AddtoCart/>}/>
+      <Route path='/wishlist' element = {<Wishlist/>}/>
+      <Route path='/profile' element = {<Profile/>}/>
+
+
+
     </Route>
     <Route path='/admin' element = {<Admin/>}/>
 

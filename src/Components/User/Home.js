@@ -45,7 +45,26 @@ export default function Home() {
 
        <div className='hthree'>
 
+        <div className='divcard'>
         <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        </div>
+
+        <div className='divcard'>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        </div>
+
+        <div className='divcard'>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        </div>
        </div>
 
        <div className='hfour'>

@@ -9,6 +9,10 @@
     grid-column: 1/4;
 }
 
+.divcard{
+    display: flex;
+}
+
 .htwo{
     background-color: brown;
     grid-column: 4/-1;
