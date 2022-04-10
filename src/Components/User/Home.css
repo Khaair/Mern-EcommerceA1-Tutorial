@@ -1,0 +1,25 @@
+.homecontainer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+}
+
+.hone{
+    background-color: green;
+    grid-column: 1/4;
+}
+
+.htwo{
+    background-color: brown;
+    grid-column: 4/-1;
+}
+
+.hthree{
+    background-color: aqua;
+    grid-column: 1/-1;
+}
+
+.hfour{
+    background-color: blue;
+    grid-column: 1/-1;
+}
