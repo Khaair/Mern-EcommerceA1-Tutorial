@@ -4,8 +4,12 @@
     grid-template-rows: auto;
 }
 
+.honeul{
+    background-color: black;
+}
+
 .hone{
-    background-color: green;
+    background-color: #111111;
     grid-column: 1/4;
 }
 
@@ -19,7 +23,7 @@
 }
 
 .hthree{
-    background-color: aqua;
+    background-color: #3A494E;
     grid-column: 1/-1;
 }
 
@@ -27,3 +31,14 @@
     background-color: blue;
     grid-column: 1/-1;
 }
+
+.colorr{
+    background-color: #111111;
+    color: aliceblue;
+}
+.colorr:hover{
+    background-color: aliceblue;
+    color: #111111;
+}
+
+

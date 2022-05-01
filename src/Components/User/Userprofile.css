@@ -1,0 +1,36 @@
+.profileContainer{
+
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    margin-top: 50px;
+  
+  }
+
+  .ootouteroneimgdiv{
+    border: 1px solid black;
+ 
+ 
+}
+  
+  .pone{
+   
+  
+    grid-column: 1/6;
+  }
+  
+  
+  .ptwo{
+   
+    
+    
+    grid-column: 6/-1;
+  }
+  
+
+  .imgg{
+    height: 200px;
+    width: 200px;
+    margin-left: 300px;
+  }

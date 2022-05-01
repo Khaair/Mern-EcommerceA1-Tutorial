@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 import './Home.css'
 import Product from './Product'
 
@@ -8,7 +9,19 @@ export default function Home() {
    <>
    <div className='homecontainer'>
        <div className='hone'>
-        one
+       <ul className="list-group honeul">
+            <li className="list-group-item colorr">Categories</li>
+            <li className="list-group-item colorr ">Electric</li>
+            <li className="list-group-item colorr">Laptop & Computer</li>
+            <li className="list-group-item colorr">Health & Beauty</li>
+            <li className="list-group-item colorr">Mom And Baby</li>
+            <li className="list-group-item colorr">Watches & Sunglasses</li>
+            <li className="list-group-item colorr">Accessories</li>
+            <li className="list-group-item colorr">Home & Living</li>
+            <li className="list-group-item colorr">TGroceries</li>
+
+          </ul>
+
 
        </div>
 
@@ -69,7 +82,7 @@ export default function Home() {
 
        <div className='hfour'>
 
-        four
+        <Footer/>
        </div>
 
    </div>

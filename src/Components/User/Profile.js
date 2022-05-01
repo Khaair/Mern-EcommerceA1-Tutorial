@@ -1,7 +1,10 @@
 import React from 'react'
+import ProfileNav from './ProfileNav'
 
 export default function Profile() {
   return (
-    <div>Profile</div>
+    <div>
+      <ProfileNav/>
+    </div>
   )
 }

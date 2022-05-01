@@ -10,6 +10,11 @@ import Admin from './Components/Admin/Admin';
 import AddtoCart from './Components/User/AddtoCart';
 import Wishlist from './Components/User/Wishlist';
 import Profile from './Components/User/Profile';
+import UserLogin from './Components/User/UserLogin';
+import Register from './Components/User/Register';
+import Userprofile from './Components/User/Userprofile';
+import AdminRegister from './Components/Admin/AdminRegister';
+
 
 
 
@@ -27,11 +32,16 @@ function App() {
       <Route path='/addtocart' element = {<AddtoCart/>}/>
       <Route path='/wishlist' element = {<Wishlist/>}/>
       <Route path='/profile' element = {<Profile/>}/>
+      <Route path='/login' element = {<UserLogin/>}/>
+      <Route path='/register' element = {<Register/>}/>
+      <Route path='/userprofile' element = {<Userprofile/>}/>
 
 
 
     </Route>
     <Route path='/admin' element = {<Admin/>}/>
+    <Route path='/Adminregister' element = {<AdminRegister/>}/>
+
 
     </Routes>
     </BrowserRouter>

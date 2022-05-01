@@ -1,0 +1,11 @@
+.pronav{
+    padding-left: 350px;
+    margin-top: 20px;
+}
+
+.pronavbtn{
+    background-color: orange;
+    width: 150px;
+    height: 40px;
+    border: 1px solid blanchedalmond;
+}
