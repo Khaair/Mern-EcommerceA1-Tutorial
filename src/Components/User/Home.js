@@ -1,10 +1,45 @@
-import React from 'react'
-import Footer from './Footer'
+import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import Footer from './Footer';
 import './Home.css'
 import Product from './Product'
 
 
-export default function Home() {
+
+function Home() {
+
+  const [product, setProduct] = useState([]);
+
+const fetch= async()=>{
+  await axios.post(`http://localhost:5000/api/product/getProducts`, {
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'auth': localStorage.getItem('auth')
+    }
+  }).then(res => {
+    console.log(res)
+    // console.log(res,'refrs')
+    setProduct(res.data.products)
+
+    // this.setState({profile:res.data})
+  }).catch(err => {
+    console.log(err)
+  })
+}
+
+  useEffect( () => {
+   
+    try{
+      fetch()
+    }
+catch(e){
+  console.log(e)
+
+}
+  }, []);
+
+
   return (
    <>
    <div className='homecontainer'>
@@ -58,26 +93,17 @@ export default function Home() {
 
        <div className='hthree'>
 
-        <div className='divcard'>
-        <Product/>
-        <Product/>
-        <Product/>
-        <Product/>
-        </div>
+       <div className="row" >
+            {product.length && product.map((item, ind) => {
+              return (
 
-        <div className='divcard'>
-        <Product/>
-        <Product/>
-        <Product/>
-        <Product/>
-        </div>
+                <Product  key = {ind} item={item}/>
+              )
+            })}
 
-        <div className='divcard'>
-        <Product/>
-        <Product/>
-        <Product/>
-        <Product/>
-        </div>
+          </div>
+
+ 
        </div>
 
        <div className='hfour'>
@@ -89,3 +115,7 @@ export default function Home() {
    </>
   )
 }
+
+
+export default Home;
+
